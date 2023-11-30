@@ -1,20 +1,25 @@
-
 @extends('layouts.navbar')
 
 @section('content')
-<div class="max-w-screen-xl flex flex-col items-center justify-between mx-auto p-20">
-    <h1 class="text-black text-5xl text-center">
-        Cyber Community Universitas Gunadarma
-    </h1>
-    <p class="p-2">
-        CTF Team Universitas Gunadarma
-    </p>
-    <img src="{{ url('img/ccug_logo.png') }}" height="368" width="268">
-    <p class="p-5">
-    Tertarik dengan dunia Cyber Security?
-    </p>
-    <button type="button" class="border-4 rounded-md px-5 dark:bg-gray-200 border-gray-20 p-2" width="160" height="58" >
-        About Us
-    </button>
+<body class="font-serif">
+<div class="w-full" style="background-image: url('img/Gen11.jpeg'); background-size: cover; background-position: center;">
+    <div class="max-w-screen-xl mx-auto p-8 md:p-20 text-white">
+        <div class="flex flex-col items-center justify-center text-center">
+            <h1 class="text-4xl md:text-5xl font-bold">
+                Cyber Community Universitas Gunadarma
+            </h1>
+            <p class="mt-2">
+                CTF Team Universitas Gunadarma
+            </p>
+            <img src="{{ asset('img/ccug.png') }}" width="300" alt="hero banner" class="mt-8">
+            <p class="mt-8">
+                Tertarik dengan dunia Cyber Security?
+            </p>
+            <li class="nav-item">
+                    <a class="btn btn-primary" href="#" role="button">ABOUT US</a>
+                </li>
+        </div>
+    </div>
 </div>
+</body>
 @endsection
