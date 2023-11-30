@@ -17,7 +17,7 @@
 
             <div class="mb-3 flex flex-col">
                 <label class="form-label">
-                    Password
+                    Passwordsssss
                 </label>
                 <input type="password" name="password" class="form-control w-80 rounded-md h-11 bg-gray-300" placeholder="Password" required tabindex="2">
             </div>
