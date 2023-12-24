@@ -28,9 +28,16 @@ Route::middleware(['guest'])->group(function(){
     Route::post('/login',[LoginController::class,'login'])->name('login.post');
     Route::get('/register',[RegisterController::class,'showRegisterForm'])->name('register');
     Route::post('/register',[RegisterController::class,'register'])->name('register.post');
+    Route::get('/forgot-password',[LoginController::class,'forgotPassword'])->name('login.forgot-password');
+    Route::get('/profile',function(){
+        return view('profile.index');
+    })->name('profile');
     Route::get('/', function () {
         return view('index');
     })->name('home');
+    Route::get('/about-us',function(){
+        return view('about-us');
+    })->name('about-us');
     
 });
 Route::get('/course',[CourseController::class,'index'])->name('course.index');

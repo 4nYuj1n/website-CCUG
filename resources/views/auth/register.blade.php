@@ -1,8 +1,8 @@
-@extends('layouts.navbar')
+@extends('layouts.top-bar')
 
 @section('content')
 <div class="max-w-screen-xl flex flex-col items-center justify-between mx-auto p-20">
-    <h1 class="text-black text-5xl text-center mb-2">
+    <h1 class="text-5xl text-center mb-2">
         Register
     </h1>
     <form class="card card-md" action="{{ route('login.post') }}" method="post" autocomplete="off">
