@@ -38,6 +38,11 @@ Route::middleware(['guest'])->group(function(){
     Route::get('/about-us',function(){
         return view('about-us');
     })->name('about-us');
-    
+    Route::get('/blog',function(){
+        return view('blog.index');
+    })->name('blog');
+    Route::get('/challenges',function(){
+        return view('chall.index');
+    })->name('chall');
 });
-Route::get('/course',[CourseController::class,'index'])->name('course.index');
+Route::get('/courses',[CourseController::class,'index'])->name('courses');

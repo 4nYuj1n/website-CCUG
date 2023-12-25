@@ -11,7 +11,8 @@ module.exports = {
         secondary:'#140C24'
       },
       fontFamily: {
-        arial: ["Arial"],
+        poppins: ["Poppins",'sans-serif'],
+        inconsolata:["Inconsolata","Poppins"]
       }
     },
   },
