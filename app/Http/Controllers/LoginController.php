@@ -16,6 +16,10 @@ class LoginController extends Controller
         return view('auth.login');
     }
 
+    public function forgotPassword(Request $request){
+        return view('auth.forgot-password');
+    }
+
     public function login(Request $request){
         $creds=$request->only('email','password');
         if(auth()->attempt($creds)){

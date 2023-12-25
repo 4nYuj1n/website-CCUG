@@ -5,7 +5,16 @@ module.exports = {
     "./resources/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor : {
+        primary:'#24143C',
+        secondary:'#140C24'
+      },
+      fontFamily: {
+        poppins: ["Poppins",'sans-serif'],
+        inconsolata:["Inconsolata","Poppins"]
+      }
+    },
   },
   plugins: [],
 }
