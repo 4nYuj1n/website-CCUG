@@ -2,6 +2,6 @@
 
 @section('content')
 <body>
-<h1> WIRA GANTENG </h1>
+<h1> DISINI CONTOHHHHHH </h1>
 </body>
 @endsection
