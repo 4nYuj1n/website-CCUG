@@ -1,8 +1,8 @@
-@extends('layouts.side-bar')
+@extends('layouts.top-bar')
 
 @section('content')
-<div class="max-w-screen-xl px-6 w-full flex flex-col py-20">
-    <div class="pb-20">
+<div class="max-w-screen-xl px-20 w-full flex flex-col py-24">
+    <div class="pb-16">
         <div class="flex flex-row">
             <div class="text-5xl">
                 AnYujin

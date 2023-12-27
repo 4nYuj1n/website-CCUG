@@ -1,84 +1,40 @@
-@extends('layouts.side-bar')
+@extends('layouts.top-bar')
 
 @section('content')
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-<div class="max-w-screen-xl flex flex-wrap justify-between p-20">
-    <div class="shadow-lg shadow-black rounded-2xl bg-secondary mb-10 mr-10 w-72 items-center flex flex-col px-10 py-5">
-        <div class="text-4xl pb-3">
-            RSA
-        </div>
-        <div class="text-stone-300 flex flex-wrap">
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #cryptography
-            </div>
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #beginner
-            </div>
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #lorem
-            </div>
-            
-        </div>
-        <img src="{{  url('img/keys-01.jpg') }}" class="h-64 w-48 rounded-lg">
-        <div class="mt-5 p-2 text-xl bg-primary rounded-lg shadow-lg shadow-black ">5 lessons</div>
+<div class="w-full min-h-screen h-full">
+    <div class="w-full py-10 text-center text-4xl">
+        Challenges
     </div>
-    <div class="shadow-lg shadow-black rounded-2xl bg-secondary mb-10 mr-10 w-72 items-center flex flex-col px-10 py-5">
-        <div class="text-4xl pb-3">
-            AES
+    <div class="w-full py-20 justify-items-center grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-y-24 gap-x-10 px-8">
+        <div class="group shadow-sm shadow-black rounded-xl bg-secondary w-full items-center flex flex-col py-3 hover:bg-purple-950">
+            <div class="text-3xl pb-2">
+                Category 1
+            </div>
+        
+            <div class="mt-5 py-1 px-2 text-lg bg-primary group-hover:bg-purple-900 rounded-md">0 / 9</div>
         </div>
-        <div class="text-stone-300 flex flex-wrap">
-            <div class=" shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #cryptography
+        <div class="group shadow-sm shadow-black rounded-xl bg-secondary w-full items-center flex flex-col py-3 hover:bg-purple-950">
+            <div class="text-3xl pb-2">
+                Category 1
             </div>
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #beginner
-            </div>
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #lorem
-            </div>
-            
+        
+            <div class="mt-5 py-1 px-2 text-lg bg-primary group-hover:bg-purple-900 rounded-md">0 / 9</div>
         </div>
-        <img src="{{  url('img/keys-01.jpg') }}" class="h-64 w-48 rounded-lg">
-        <div class="mt-5 p-2 text-xl bg-primary rounded-lg shadow-lg shadow-black ">5 lessons</div>
+        <div class="group shadow-sm shadow-black rounded-xl bg-secondary w-full items-center flex flex-col py-3 hover:bg-purple-950">
+            <div class="text-3xl pb-2">
+                Category 1
+            </div>
+        
+            <div class="mt-5 py-1 px-2 text-lg bg-primary group-hover:bg-purple-900 rounded-md">0 / 9</div>
+        </div>
+        <div class="group shadow-sm shadow-black rounded-xl bg-secondary w-full items-center flex flex-col py-3 hover:bg-purple-950">
+            <div class="text-3xl pb-2">
+                Category 1
+            </div>
+        
+            <div class="mt-5 py-1 px-2 text-lg bg-primary group-hover:bg-purple-900 rounded-md">0 / 9</div>
+        </div>
     </div>
-    <div class="shadow-lg shadow-black rounded-2xl bg-secondary mb-10 mr-10 w-72 items-center flex flex-col px-10 py-5">
-        <div class="text-4xl pb-3">
-            DSA
-        </div>
-        <div class="text-stone-300 flex flex-wrap">
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #cryptography
-            </div>
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #beginner
-            </div>
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #lorem
-            </div>
-            
-        </div>
-        <img src="{{  url('img/keys-01.jpg') }}" class="h-64 w-48 rounded-lg">
-        <div class="mt-5 p-2 text-xl bg-primary rounded-lg shadow-lg shadow-black ">5 lessons</div>
-    </div>
-    <div class="shadow-lg shadow-black rounded-2xl bg-secondary mb-10 mr-10 w-72 items-center flex flex-col px-10 py-5">
-        <div class="text-4xl pb-3">
-            DSA
-        </div>
-        <div class="text-stone-300 flex flex-wrap">
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #cryptography
-            </div>
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #beginner
-            </div>
-            <div class="shadow-lg shadow-black  bg-primary rounded-lg w-fit mb-3 ml-2 px-2">
-                #lorem
-            </div>
-            
-        </div>
-        <img src="{{  url('img/keys-01.jpg') }}" class="h-64 w-48 rounded-lg">
-        <div class="mt-5 p-2 text-xl bg-primary rounded-lg shadow-lg shadow-black ">5 lessons</div>
-    </div>
-    
 </div>
 @endsection
