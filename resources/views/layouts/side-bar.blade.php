@@ -33,7 +33,7 @@
                   </a>
                </li>
                <li>
-                  <a href="#" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <a href="{{ route('scoreboard') }}" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                      <img src="{{ url('img/asset-2.png') }}" />
                      <span class="ms-3">Scoreboard</span>
                   </a>
@@ -45,7 +45,7 @@
                   </a>
                </li>
                <li>
-                  <a href="#" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <a href="{{ route('faq') }}" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                      <img src="{{ url('img/asset-4.png') }}" />
                      <span class="ms-3">FAQ</span>
                   </a>

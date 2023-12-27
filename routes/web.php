@@ -44,5 +44,11 @@ Route::middleware(['guest'])->group(function(){
     Route::get('/challenges',function(){
         return view('chall.index');
     })->name('chall');
+    Route::get('/scoreboard',function(){
+        return view('scoreboard.index');
+    })->name('scoreboard');
+    Route::get('/faq',function(){
+        return view('faq.index');
+    })->name('faq');
 });
 Route::get('/courses',[CourseController::class,'index'])->name('courses');
