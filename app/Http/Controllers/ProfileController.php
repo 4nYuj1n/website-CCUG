@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Course;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
-class CourseController extends Controller
+class ProfileController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class CourseController extends Controller
     public function index()
     {
         
-        return view('course.index');
+        return view('profile.index');
     }
 
     /**
@@ -35,7 +36,7 @@ class CourseController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Course $course)
+    public function show(string $id)
     {
         //
     }
@@ -43,7 +44,7 @@ class CourseController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Course $course)
+    public function edit(string $id)
     {
         //
     }
@@ -51,7 +52,7 @@ class CourseController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Course $course)
+    public function update(Request $request, string $id)
     {
         //
     }
@@ -59,7 +60,7 @@ class CourseController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Course $course)
+    public function destroy(string $id)
     {
         //
     }

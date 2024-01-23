@@ -7,25 +7,24 @@
     <h1 class="text-5xl text-center pb-5">
         Register
     </h1>
-    <form class="card card-md" action="{{ route('login.post') }}" method="post" autocomplete="off">
+    <form class="card card-md" action="{{ route('register.post') }}" method="post" autocomplete="off">
         @csrf
-
         <div class="card-body flex flex-col">
             <div class="mb-3 flex flex-col space-y-2">
                 <label class="form-label">Username</label>
-                <input type="username" name="username" value="" class="px-3 form-control @error('email') is-invalid @enderror w-80 rounded-md h-9 bg-gray-300" placeholder="Username" required autofocus tabindex="1">
+                <input type="name" name="name" value="" class="text-black px-3 form-control @error('email') is-invalid @enderror w-80 rounded-md h-9 bg-gray-300" placeholder="Username" required autofocus tabindex="1">
             </div>
 
             <div class="mb-3 flex flex-col space-y-2">
                 <label class="form-label">Email</label>
-                <input type="email" name="email" value="" class="px-3 form-control @error('email') is-invalid @enderror w-80 rounded-md h-9 bg-gray-300" placeholder="Email" required autofocus tabindex="1">
+                <input type="email" name="email" value="" class="text-black px-3 form-control @error('email') is-invalid @enderror w-80 rounded-md h-9 bg-gray-300" placeholder="Email" required autofocus tabindex="1">
             </div>
 
             <div class="mb-3 flex flex-col space-y-2">
                 <label class="form-label">
                     Password
                 </label>
-                <input type="password" name="password" class="px-3 form-control w-80 rounded-lg h-9 bg-gray-300" placeholder="Password" required tabindex="2">
+                <input type="password" name="password" class="text-black px-3 form-control w-80 rounded-lg h-9 bg-gray-300" placeholder="Password" required tabindex="2">
             </div>
         </div>
         <div class="mt-3 flex flex-row justify-between">

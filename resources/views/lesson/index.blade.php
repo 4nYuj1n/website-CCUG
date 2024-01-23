@@ -5,10 +5,10 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <div class="w-full min-h-screen h-full">
     <div class="w-full py-10 text-center text-4xl">
-        Courses
+        Lesson
     </div>
     <div class="w-full py-20 justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-24">
-    <a href="{{route('lesson.index',['id'=>1])}}" class="shadow-lg shadow-black rounded-2xl bg-secondary mb-10 mr-12 w-72 items-center flex flex-col px-10 py-5 border-2 border-gray-50">
+    <a href="{{route('home')}}" class="shadow-lg shadow-black rounded-2xl bg-secondary mb-10 mr-12 w-72 items-center flex flex-col px-10 py-5 border-2 border-gray-50">
         <div class="text-4xl pb-3">
             RSA
         </div>

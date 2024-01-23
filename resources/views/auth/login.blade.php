@@ -13,14 +13,14 @@
 
             <div class="mb-3 flex flex-col space-y-2">
                 <label class="form-label">Username or Email</label>
-                <input type="email" name="email" value="" class="px-3 form-control @error('email') is-invalid @enderror w-80 rounded-lg h-9 bg-gray-300" placeholder="Email" required autofocus tabindex="1">
+                <input type="email" name="email" value="" class="text-black px-3 form-control @error('email') is-invalid @enderror w-80 rounded-lg h-9 bg-gray-300" placeholder="Email" required autofocus tabindex="1">
             </div>
 
             <div class="mb-3 flex flex-col">
                 <label class="form-label">
                     Password
                 </label>
-                <input type="password" name="password" class="px-3 mb-2 form-control w-80 rounded-lg h-9 bg-gray-200" placeholder="Password" required tabindex="2">
+                <input type="password" name="password" class="text-black px-3 mb-2 form-control w-80 rounded-lg h-9 bg-gray-200" placeholder="Password" required tabindex="2">
             </div>
         </div>
         <div class="mb-3 flex flex-row justify-between">

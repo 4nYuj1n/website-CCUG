@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&display=swap" rel="stylesheet">
@@ -39,12 +40,6 @@
                   </a>
                </li>
                <li>
-                  <a href="{{ route('blog') }}" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                     <img src="{{ url('img/asset-3.png') }}" />
-                     <span class="ms-3">Blog</span>
-                  </a>
-               </li>
-               <li>
                   <a href="{{ route('faq') }}" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                      <img src="{{ url('img/asset-4.png') }}" />
                      <span class="ms-3">FAQ</span>
@@ -67,6 +62,8 @@
       </nav>
    </div>
 @yield('content')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
 </div>
 
 
