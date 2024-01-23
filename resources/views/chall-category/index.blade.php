@@ -1,6 +1,5 @@
 @extends(auth()->guest() ? 'layouts.top-bar' : 'layouts.top-bar-auth')
 
-
 @section('content')
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <div class="w-full min-h-screen h-full">

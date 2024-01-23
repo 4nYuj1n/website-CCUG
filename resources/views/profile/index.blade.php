@@ -1,4 +1,5 @@
-@extends('layouts.top-bar')
+@extends(auth()->guest() ? 'layouts.top-bar' : 'layouts.top-bar-auth')
+
 
 @section('content')
 <div class="max-w-screen-xl px-20 w-full flex flex-col py-24">
@@ -18,7 +19,6 @@
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between text-lg bg-secondary rounded-lg shadow-black text-white shadow-lg">
         <div class="px-7 flex-1 flex flex-col space-y-3 py-5">
             <div class="flex flex-row">Joined :<div class="px-3"> 27 november 2023</div> </div>
-            <div class="flex flex-row">Blog Post :<div class="px-3"> 13</div> </div>
             <div class="flex flex-row">Challenges Solved :<div class="px-3"> 78</div> </div>
         </div>
         <div class="items-end flex-1 flex flex-col space-y-3 py-5 px-20">

@@ -1,4 +1,4 @@
-@extends('layouts.top-bar')
+@extends(auth()->guest() ? 'layouts.top-bar' : 'layouts.top-bar-auth')
 
 @section('content')
 <div class="container mx-auto max-w-4xl p-5">
