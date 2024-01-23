@@ -42,7 +42,7 @@ Route::middleware(['auth'])->group(function(){
     });
     Route::get('/logout',[LoginController::class,'logout'])->name('logout');
     Route::resource('/lesson',\App\Http\Controllers\LessonController::class);
-    Route::get('/lesson/{id}','\App\Http\Controllers\LessonController::class@index')->name('lesson.index');
+    Route::get('/lesson/{uid}','\App\Http\Controllers\LessonController::class@index')->name('lesson.index');
     Route::resource('/profile',\App\Http\Controllers\ProfileController::class);
     Route::get('/profile',function(){
         return view('profile.index');
