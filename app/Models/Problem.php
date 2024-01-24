@@ -25,6 +25,7 @@ class Problem extends Model
         'title',
         'desc',
         'files',
+        'creator',
         'score',
     ];
 }

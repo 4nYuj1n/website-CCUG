@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
@@ -8,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor : {
-        primary:'#24143C',
-        secondary:'#140C24'
+        my_primary:'#24143C',
+        my_secondary:'#140C24'
       },
       fontFamily: {
         poppins: ["Poppins",'sans-serif'],

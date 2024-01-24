@@ -8,7 +8,7 @@
     <h1 class=" text-5xl text-center py-5">
         Add new course
     </h1>
-    <form class="card card-md form-control" action="{{ route('login.post') }}" method="post" autocomplete="off">
+    <form class="card card-md form-control" action="{{ route('admin-course.store') }}" enctype="multipart/form-data" method="post" autocomplete="off">
         @csrf
 
         <div class="card-body flex flex-col ">
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="mb-3 flex flex-row justify-between">
-            <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn bg-secondary border-[1px] rounded-md px-5 p-2" type="submit">Add</button>
+            <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn bg-my_secondary border-[1px] rounded-md px-5 p-2" type="submit">Add</button>
         </div>
     </form>
 </div>

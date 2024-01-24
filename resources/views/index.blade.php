@@ -14,7 +14,7 @@
     <p class="p-5">
     Tertarik dengan dunia Cyber Security?
     </p>
-    <button type="button" class="border-2 rounded-md px-5 bg-secondary border-gray-20 p-2" width="160" height="58" >
+    <button type="button" class="border-2 rounded-md px-5 bg-my_secondary border-gray-20 p-2" width="160" height="58" >
         About Us
     </button>
 </div>

@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body class="bg-primary text-white font-inconsolata">
+<body class="bg-my_primary text-white font-inconsolata">
 @vite('resources/css/app.css')
-<nav class="sticky transition top-0 backdrop-filter z-10 border-b bg-secondary/70 border-gray-100/30 backdrop-blur-sm">
+<nav class="sticky transition top-0 backdrop-filter z-10 border-b bg-my_secondary/70 border-gray-100/30 backdrop-blur-sm">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="{{ url('img/ccug.png') }}" class="h-10" alt="CCUG" />

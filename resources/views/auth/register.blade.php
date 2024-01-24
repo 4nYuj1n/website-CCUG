@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="max-w-screen-xl flex flex-col items-center justify-between mx-auto p-20">
-<div class="bg-secondary pb-10 pt-5 px-36 rounded-3xl shadow-black shadow-lg">
+<div class="bg-my_secondary pb-10 pt-5 px-36 rounded-3xl shadow-black shadow-lg">
     <h1 class="text-5xl text-center pb-5">
         Register
     </h1>
@@ -29,7 +29,7 @@
         </div>
         <div class="mt-3 flex flex-row justify-between">
             <div class="mb-3"><a href="{{ route('login.forgot-password')}}">Forgot Password? </a></div>
-            <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn bg-secondary border-[1px] rounded-md px-5 p-2" type="submit">Register</button>
+            <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn bg-my_secondary border-[1px] rounded-md px-5 p-2" type="submit">Register</button>
         </div>
     </form>
 </div>

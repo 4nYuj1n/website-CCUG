@@ -16,7 +16,7 @@
         freedom1jossie@gmail.com
     </div>
     </div>
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between text-lg bg-secondary rounded-lg shadow-black text-white shadow-lg">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between text-lg bg-my_secondary rounded-lg shadow-black text-white shadow-lg">
         <div class="px-7 flex-1 flex flex-col space-y-3 py-5">
             <div class="flex flex-row">Joined :<div class="px-3"> 27 november 2023</div> </div>
             <div class="flex flex-row">Challenges Solved :<div class="px-3"> 78</div> </div>
@@ -32,7 +32,7 @@
         <div class="text-2xl pb-3">
             SOLVED PROBLEM
         </div>
-        <div class="max-w-screen-xl px-2 py-2 flex flex-row items-center justify-between text-lg bg-secondary rounded-sm text-white">
+        <div class="max-w-screen-xl px-2 py-2 flex flex-row items-center justify-between text-lg bg-my_secondary rounded-sm text-white">
             <div>
                 20 August 2022
             </div>
@@ -47,7 +47,7 @@
                 <div class="text-md">500</div>
             </div>
         </div>
-        <div class="max-w-screen-xl px-2 py-2 flex flex-row items-center justify-between text-lg bg-primary rounded-sm text-white">
+        <div class="max-w-screen-xl px-2 py-2 flex flex-row items-center justify-between text-lg bg-my_primary rounded-sm text-white">
             <div>
                 20 August 2022
             </div>
@@ -62,7 +62,7 @@
                 <div class="text-md">500</div>
             </div>
         </div>
-        <div class="max-w-screen-xl px-2 py-2 flex flex-row items-center justify-between text-lg bg-secondary rounded-sm text-white">
+        <div class="max-w-screen-xl px-2 py-2 flex flex-row items-center justify-between text-lg bg-my_secondary rounded-sm text-white">
             <div>
                 20 August 2022
             </div>

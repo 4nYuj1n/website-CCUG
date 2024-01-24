@@ -41,18 +41,18 @@ Route::middleware(['auth'])->group(function(){
     Route::middleware(['admin'])->group(function(){
         Route::get('/admin',[\App\Http\Controllers\AdminController::class,'showIndex'])->name('admin.index');
     });
+
     Route::get('/logout',[LoginController::class,'logout'])->name('logout');
     // Route::get('/lesson/{id}','\App\Http\Controllers\LessonController::class@index')->name('lesson.index');
     Route::resource('/profile',\App\Http\Controllers\ProfileController::class);
+    Route::resource('/admin-course',\App\Http\Controllers\AdminCourseController::class);
+    Route::resource('/admin-lesson',\App\Http\Controllers\AdminLessonController::class);
+    Route::resource('/admin-chall',\App\Http\Controllers\AdminLessonController::class);
+    
     Route::get('/profile',function(){
         return view('profile.index');
     })->name('profile.index');
-    Route::get('/add-course',function(){
-        return view('admin.add-course');
-    })->name('admin.add-course');
-    Route::get('/add-lesson',function(){
-        return view('admin.add-lesson');
-    })->name('admin.add-lesson');
+    
     Route::get('/add-chall',function(){
         return view('admin.add-chall');
     })->name('admin.add-chall');
@@ -65,9 +65,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/faq',function(){
         return view('faq.index');
     })->name('faq');
+    Route::resource('/users',\App\Http\Controllers\UserController::class);
 });
 
-Route::get('/show', function(){
-    return view('lesson.show');
-});
 

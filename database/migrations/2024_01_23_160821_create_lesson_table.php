@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->integer('id_course');
             $table->string('title');
-            $table->string('content');
-            $table->string('gambar');
+            $table->string('creator');
+            $table->longText('content');
             $table->timestamps();
         });
     }

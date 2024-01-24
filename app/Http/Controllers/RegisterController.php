@@ -17,6 +17,7 @@ class RegisterController extends Controller
     }
 
     public function register(request $request){
+
         $data=$request->all();
         $data['role']=2;
 

@@ -21,7 +21,7 @@
                 Score
             </div>
         </div>
-        <div class="w-full flex flex-row items-center px-5 bg-secondary">
+        <div class="w-full flex flex-row items-center px-5 bg-my_secondary">
             <div class="flex-1 flex py-2">
                 #1
             </div>

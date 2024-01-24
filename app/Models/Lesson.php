@@ -26,6 +26,7 @@ class Lesson extends Model
         'id_course',
         'title',
         'content',
+        'creator',
         'gambar'
     ];
     public function Lesson(): HasOne{

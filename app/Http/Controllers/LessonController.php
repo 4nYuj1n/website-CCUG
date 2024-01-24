@@ -3,19 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lesson;
-use App\Models\Course;
 use Illuminate\Http\Request;
 
-class CourseController extends Controller
+class LessonController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data=Course::all();
-
-        return view('course.index',['data'=>$data]);
+        //
     }
 
     /**
@@ -37,17 +34,15 @@ class CourseController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(String $course)
+    public function show(Lesson $lesson)
     {
-        $id=Course::where('title','=',$course)->first()->id;
-        $lesson=Lesson::where('id_course','=',$id)->get();
-        return view('course.show',['data'=>$lesson]);
+        dd('masuk');
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Course $course)
+    public function edit(Lesson $lesson)
     {
         //
     }
@@ -55,7 +50,7 @@ class CourseController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Course $course)
+    public function update(Request $request, Lesson $lesson)
     {
         //
     }
@@ -63,7 +58,7 @@ class CourseController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Course $course)
+    public function destroy(Lesson $lesson)
     {
         //
     }

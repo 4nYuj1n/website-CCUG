@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="mb-3 flex flex-row justify-between">
-            <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn bg-secondary border-[1px] rounded-md px-5 p-2" type="submit">Add</button>
+            <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn bg-my_secondary border-[1px] rounded-md px-5 p-2" type="submit">Add</button>
         </div>
     </form>
 </div>
