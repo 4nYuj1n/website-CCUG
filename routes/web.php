@@ -58,3 +58,7 @@ Route::middleware(['auth'])->group(function(){
     })->name('faq');
 });
 
+Route::get('/show', function(){
+    return view('lesson.show');
+});
+
