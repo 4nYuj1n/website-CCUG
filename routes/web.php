@@ -24,6 +24,7 @@ Route::get('/about-us',function(){
     return view('about-us');
 })->name('about-us');
 Route::get('/',[DashboardController::class, 'index'])->name('home');
+Route::get('/home',[DashboardController::class, 'index']);
 
 Route::middleware(['guest'])->group(function(){
     Route::get('/login',[LoginController::class,'showLoginForm'])->name('login');
@@ -33,20 +34,28 @@ Route::middleware(['guest'])->group(function(){
     Route::get('/forgot-password',[LoginController::class,'forgotPassword'])->name('login.forgot-password');
 
 });
+
 Route::resource('/course',\App\Http\Controllers\CourseController::class);
 
 Route::middleware(['auth'])->group(function(){
     Route::middleware(['admin'])->group(function(){
-        Route::get('/admin',[AdminController::class,'showIndex'])->name('admin.index');
-
+        Route::get('/admin',[\App\Http\Controllers\AdminController::class,'showIndex'])->name('admin.index');
     });
     Route::get('/logout',[LoginController::class,'logout'])->name('logout');
-    Route::resource('/lesson',\App\Http\Controllers\LessonController::class);
-    Route::get('/lesson/{uid}','\App\Http\Controllers\LessonController::class@index')->name('lesson.index');
+    // Route::get('/lesson/{id}','\App\Http\Controllers\LessonController::class@index')->name('lesson.index');
     Route::resource('/profile',\App\Http\Controllers\ProfileController::class);
     Route::get('/profile',function(){
         return view('profile.index');
     })->name('profile.index');
+    Route::get('/add-course',function(){
+        return view('admin.add-course');
+    })->name('admin.add-course');
+    Route::get('/add-lesson',function(){
+        return view('admin.add-lesson');
+    })->name('admin.add-lesson');
+    Route::get('/add-chall',function(){
+        return view('admin.add-chall');
+    })->name('admin.add-chall');
     Route::get('/challenges',function(){
         return view('chall.index');
     })->name('chall');

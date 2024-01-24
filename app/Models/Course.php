@@ -25,6 +25,7 @@ class Course extends Model
     protected $fillable = [
         'title',
         'gambar',
+        'creator',
     ];
     public function Lesson(): HasMany{
         return $this->hasMany(Lesson::class,'id_course','id');

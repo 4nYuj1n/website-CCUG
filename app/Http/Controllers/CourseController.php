@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lesson;
 use App\Models\Course;
 use Illuminate\Http\Request;
 
@@ -12,8 +13,9 @@ class CourseController extends Controller
      */
     public function index()
     {
-        
-        return view('course.index');
+        $data=Course::all();
+
+        return view('course.index',['data'=>$data]);
     }
 
     /**
@@ -35,9 +37,11 @@ class CourseController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Course $course)
+    public function show(String $course)
     {
-        //
+        $id=Course::where('title','=',$course)->first()->id;
+        $lesson=Lesson::where('id_course','=',$id)->get();
+        return view('lesson.index',['data'=>$lesson]);
     }
 
     /**

@@ -20,7 +20,7 @@
         </div>
         <div class="group shadow-sm shadow-black rounded-xl bg-secondary w-full items-center flex flex-col py-3 hover:bg-purple-950 border-2 border-gray-50">
             <div class="text-2xl pb-2">
-                Not So Baby RSA
+                 RSA
             </div>
             <div class="text-2xl pb-2">
                 100
