@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="//cdn.quilljs.com/1.0.0/quill.min.js"></script>
+    <link href="//cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet" /> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,39 +22,33 @@
             <img src="{{ url('img/ccug.png') }}" class="h-10" alt="CCUG Logo"/>
          </a>
          <div class="my-spacing-8 border-solid border-t border-neutral-200"></div>
-            <ul class="space-y-2 mt-5 px-3">
-               <li>
-                  <a href="{{ route('courses') }}" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <ul class="space-y-2 mt-5 px-3 text-md">
+            <li>
+                  <a href="{{ route('course.index') }}" class="flex items-center p-2 text-white rounded-lg hover:text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                      <img src="{{ url('img/asset.png') }}" />
-                     <span class="ms-3 font-arial">Courses</span>
+                     <span class="ms-3 font-arial">Users</span>
                   </a>
                </li>
                <li>
-                  <a href="{{ route('chall') }}" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                     <img src="{{ url('img/asset-1.png') }}" />
-                     <span class="ms-3 font-arial">Challenges</span>
+                  <a href="{{ route('admin.add-course') }}" class="flex items-center p-2 text-white rounded-lg hover:text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <img src="{{ url('img/asset.png') }}" />
+                     <span class="ms-3 font-arial">Add Course</span>
                   </a>
                </li>
                <li>
-                  <a href="{{ route('scoreboard') }}" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                     <img src="{{ url('img/asset-2.png') }}" />
-                     <span class="ms-3">Scoreboard</span>
+                  <a href="{{ route('admin.add-lesson') }}" class="flex items-center p-2 text-white rounded-lg hover:text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <img src="{{ url('img/asset.png') }}" />
+                     <span class="ms-3 font-arial">Add Lesson</span>
                   </a>
                </li>
                <li>
-                  <a href="{{ route('faq') }}" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                     <img src="{{ url('img/asset-4.png') }}" />
-                     <span class="ms-3">FAQ</span>
+                  <a href="{{ route('admin.add-chall') }}" class="flex items-center p-2 text-white rounded-lg hover:text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <img src="{{ url('img/asset.png') }}" />
+                     <span class="ms-3 font-arial">Add Challenge</span>
                   </a>
                </li>
                <li>
-                  <a href="{{ route('profile') }}" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                     <img src="{{ url('img/asset-5.png') }}" />
-                     <span class="ms-3">Profile</span>
-                  </a>
-               </li>
-               <li>
-                  <a href="#" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <a href="{{route('logout')}}" class="flex items-center p-2 text-white rounded-lg dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group">
                      <img src="{{ url('img/asset-6.png') }}" />
                      <span class="ms-3">Logout</span>
                   </a>

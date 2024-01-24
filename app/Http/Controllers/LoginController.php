@@ -24,12 +24,8 @@ class LoginController extends Controller
         $creds=$request->only('email','password');
         if(auth()->attempt($creds)){
             session(["token" => auth()->user()->createToken($request->email)->plainTextToken]);
-            if(auth()->user()->role==2){
             return redirect()->route('home');
-            } 
-            else{
-            return redirect()->route('admin-home');
-            }
+
 
         }
         else{
