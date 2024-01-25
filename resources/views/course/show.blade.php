@@ -10,7 +10,7 @@
     <div class="w-full py-20 justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-24">
 
     @foreach ( $data as $i)
-    <a href="{{route('course.show',['course'=>$i->title])}}" class="shadow-lg shadow-black rounded-2xl bg-my_secondary mb-10 mr-12 w-72 flex flex-col px-10 py-5 border-2 border-gray-50">
+    <a href="{{route('lesson.show',['lesson'=>$i->id])}}" class="shadow-lg shadow-black rounded-2xl bg-my_secondary mb-10 mr-12 w-72 flex flex-col px-10 py-5 border-2 border-gray-50">
         <div class="text-2xl pb-3">
             {{$i->title}}
         </div>
