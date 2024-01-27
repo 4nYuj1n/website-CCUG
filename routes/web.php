@@ -48,20 +48,15 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('/admin-course',\App\Http\Controllers\AdminCourseController::class);
     Route::resource('/admin-lesson',\App\Http\Controllers\AdminLessonController::class);
     Route::resource('/admin-chall',\App\Http\Controllers\AdminLessonController::class);
-    
-    Route::get('/profile',function(){
-        return view('profile.index');
-    })->name('profile.index');
-    
-    Route::get('/add-chall',function(){
-        return view('admin.add-chall');
-    })->name('admin.add-chall');
+    Route::resource('/lesson',\App\Http\Controllers\LessonController::class);
+    Route::get('/scoreboard','\App\Http\Controllers\ScoreboardController@showScoreboard')->name('scoreboard.index');
     Route::get('/challenges',function(){
+
         return view('chall.index');
     })->name('chall');
-    Route::get('/scoreboard',function(){
-        return view('scoreboard.index');
-    })->name('scoreboard');
+    Route::get('/add-chall',function(){
+        return view('coming-soon');
+    })->name('admin.add-chall');
     Route::get('/faq',function(){
         return view('faq.index');
     })->name('faq');

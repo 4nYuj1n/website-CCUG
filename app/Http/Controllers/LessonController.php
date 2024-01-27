@@ -34,9 +34,11 @@ class LessonController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Lesson $lesson)
+    public function show(String $id)
     {
-        dd('masuk');
+        $data=Lesson::find($id);
+        return view('lesson.show',['data'=>$data]);
+
     }
 
     /**
